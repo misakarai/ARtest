@@ -23,6 +23,8 @@
 
       <a-assets>
     <a-asset-item id="tree" src="https://github.com/misakarai/ARtest/blob/main/Quiche.gltf"></a-asset-item>
+        <a-asset-item id="crate-obj" src="untitled.obj"></a-asset-item>
+          <a-asset-item id="crate-mtl" src="untitled.mtl"></a-asset-item>
   </a-assets>
 
   <a-entity gltf-model="#tree"></a-entity>
@@ -32,6 +34,7 @@
         <!-- マーカーの場所に箱を置く（見やすいようにワイヤーフレーム表示） -->
         <a-box position="0 0.5 0" wireframe="true"></a-box>
     <a-entity gltf-model="#tree" animation-mixer="clip:*"></a-entity>
+  <a-obj-model position="0 0 0" scale="0.1 0.1 0.1" rotation="0 180 180" src="#crate-obj" mtl="#crate-mtl"></a-obj-model>
 
       </a-marker>
 
